@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <script src="project2.js" defer></script>
+    <link rel="stylesheet" href="project2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Library Book Management System</h1>
+
+        <div class="section">
+            <h2>Add New Books</h2>
+            <div class="boxes">
+                <textarea name="textbox" id="bookInput" placeholder="Enter book title"></textarea>
+                <button onclick="addToFront()">Add to Front (unshift)</button>
+                <button onclick="addToEnd()">Add to End (push)</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Remove Books</h2>
+            <div class="boxes">
+                <button class="remove-btn" onclick="removeFromEnd()">Remove from Front (shift)</button>
+                <button class="remove-btn" onclick="removeFromFront()">Remove from End (pop)</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Current Book Shelf</h2>
+            <!-- <h3>Front of Shelf</h3> -->
+            <ol id="bookshelf">
+                
+            </ol>
+            <!-- <h3>End of Shelf</h3> -->
+        </div>
+
+    </div>
+</body>
+</html>
